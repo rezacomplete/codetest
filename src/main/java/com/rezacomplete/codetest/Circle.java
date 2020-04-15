@@ -10,8 +10,17 @@ import java.util.List;
 public class Circle {
 
     /**
+     * Calculating complexity:
+     * for n = 5 & k = 1 ==> 5 reads
+     * for n = 5 & k = 2 ==> 10 reads
+     * for n = 5 & k = 3 ==> 12 reads
+     * for n = 5 & k = 4 ==> 16 reads
+     * for n = 5 & k = 5 ==> 20 reads
+     * for n = 5 & k = 6 ==> 24 reads
+     * for n = 5 & k = 7 ==> 28 reads
      *
-     * The complexity of this code is O(n)
+     * for the first 2 rows the complexity is kn but for the rest is k(n-1). we can ignore the k therefore
+     * the complexity of this code is O(n)
      */
     public static Result executeCircle(int numberOfChildren,int k) {
         validateInputs(numberOfChildren, k);
