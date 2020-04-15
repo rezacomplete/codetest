@@ -54,11 +54,11 @@ public class Circle {
     }
 
     private static void validateInputs(int numberOfChildren, int k) {
-        if (numberOfChildren <=0) {
+        if (numberOfChildren <= 0) {
             throw new InvalidNumberOfChildren("Number of children should be more than zero");
         }
 
-        if (k <=0) {
+        if (k <= 0) {
             throw new InvalidIndex("K should be greater than zero");
         }
     }
